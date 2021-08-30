@@ -13,7 +13,7 @@ Studies of native syntactic processing often target phrase structure violations 
 
 ## Code
 
-All results reported in the manuscript should be reproducible using the code and data in this repository. Code is provided in Jupyter notebooks, which are extensively annotated for (hopefully) clarity. 
+All results reported in the manuscript should be reproducible using the code and data in this repository. Code is provided in Jupyter notebooks, which are extensively annotated. The original raw EEG data files are not included in this GitHub repository, because they exceed GitHub's file limit. The raw EEG files are provided on the accompanying [OSF site](https://osf.io/5vn2y/) for this project, and should be downloaded to the `data` folder of this repo if one desires to re-run the preprocesing.
 
 - EEG preprocessing and visualization were conducted using [MNE](https://mne.tools/) v 0.23.0 under [Python](https://www.python.org/) v 3.9
 - statistical analyses were conducted using the [mgcv](https://cran.r-project.org/web/packages/mgcv/) package v 1.8-36, under [R](https://cran.r-project.org/) v 4.1.0
