@@ -1,0 +1,39 @@
+
+Family: gaussian 
+Link function: identity 
+
+Formula:
+MeanAmpl ~ (Adverb + SentPos + ROI + baseline)^4 + (Adverb + 
+    SentPos + ROI + SCT.overall.V2pct)^4 + s(Subject, bs = "re") + 
+    s(Sentence, bs = "re")
+
+Parametric Terms:
+                                     df     F            p-value
+Adverb                                2  0.47             0.6243
+SentPos                               1  4.04             0.0445
+ROI                                   8  1.61             0.1158
+baseline                              1 61.15 0.0000000000000053
+SCT.overall.V2pct                     1  9.43             0.0021
+Adverb:SentPos                        2  1.19             0.3051
+Adverb:ROI                           16  0.54             0.9283
+Adverb:baseline                       2  2.42             0.0889
+SentPos:ROI                           8  0.28             0.9713
+SentPos:baseline                      1  5.11             0.0237
+ROI:baseline                          8  7.15 0.0000000016266127
+Adverb:SCT.overall.V2pct              2  0.53             0.5911
+SentPos:SCT.overall.V2pct             1  4.48             0.0343
+ROI:SCT.overall.V2pct                 8  1.89             0.0571
+Adverb:SentPos:ROI                   16  0.72             0.7753
+Adverb:SentPos:baseline               2  1.06             0.3467
+Adverb:ROI:baseline                  16  3.19 0.0000154907222602
+SentPos:ROI:baseline                  8  3.13             0.0015
+Adverb:SentPos:SCT.overall.V2pct      2  1.21             0.2978
+Adverb:ROI:SCT.overall.V2pct         16  0.58             0.9036
+SentPos:ROI:SCT.overall.V2pct         8  0.26             0.9773
+Adverb:SentPos:ROI:baseline          16  2.37             0.0015
+Adverb:SentPos:ROI:SCT.overall.V2pct 16  0.78             0.7080
+
+Approximate significance of smooth terms:
+              edf Ref.df     F             p-value
+s(Subject)   17.8   18.0 109.5 <0.0000000000000002
+s(Sentence) 222.7  237.0  15.5 <0.0000000000000002

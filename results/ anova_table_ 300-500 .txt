@@ -3,28 +3,37 @@ Family: gaussian
 Link function: identity 
 
 Formula:
-MeanAmpl ~ (Adverb + SentPos + ROI + baseline)^4 + s(Channel, 
-    Subject, bs = "re") + s(Sentence, Subject, bs = "re")
+MeanAmpl ~ (Adverb + SentPos + ROI + baseline)^4 + (Adverb + 
+    SentPos + ROI + SCT.overall.V2pct)^4 + s(Subject, bs = "re") + 
+    s(Sentence, bs = "re")
 
 Parametric Terms:
-                            df     F              p-value
-Adverb                       2  0.23              0.79368
-SentPos                      1  2.72              0.09891
-ROI                          8 12.01 < 0.0000000000000002
-baseline                     1 10.58              0.00114
-Adverb:SentPos               2  1.37              0.25301
-Adverb:ROI                  16  0.71              0.78542
-Adverb:baseline              2  6.61              0.00134
-SentPos:ROI                  8 17.55 < 0.0000000000000002
-SentPos:baseline             1 30.22          0.000000039
-ROI:baseline                 8  1.25              0.26585
-Adverb:SentPos:ROI          16  1.74              0.03290
-Adverb:SentPos:baseline      2 10.63          0.000024233
-Adverb:ROI:baseline         16  1.93              0.01373
-SentPos:ROI:baseline         8  2.30              0.01855
-Adverb:SentPos:ROI:baseline 16  2.79              0.00016
+                                     df     F  p-value
+Adverb                                2  1.47  0.23017
+SentPos                               1  6.25  0.01241
+ROI                                   8  4.64 0.000011
+baseline                              1 14.97  0.00011
+SCT.overall.V2pct                     1  2.42  0.11986
+Adverb:SentPos                        2  1.09  0.33586
+Adverb:ROI                           16  0.84  0.64024
+Adverb:baseline                       2  1.69  0.18525
+SentPos:ROI                           8  0.75  0.64760
+SentPos:baseline                      1  4.75  0.02927
+ROI:baseline                          8  3.37  0.00072
+Adverb:SCT.overall.V2pct              2  1.46  0.23337
+SentPos:SCT.overall.V2pct             1  6.76  0.00930
+ROI:SCT.overall.V2pct                 8  4.12 0.000064
+Adverb:SentPos:ROI                   16  1.10  0.34803
+Adverb:SentPos:baseline               2  2.99  0.05048
+Adverb:ROI:baseline                  16  2.41  0.00124
+SentPos:ROI:baseline                  8  4.18 0.000052
+Adverb:SentPos:SCT.overall.V2pct      2  1.23  0.29238
+Adverb:ROI:SCT.overall.V2pct         16  0.88  0.59459
+SentPos:ROI:SCT.overall.V2pct         8  0.68  0.70929
+Adverb:SentPos:ROI:baseline          16  2.60  0.00044
+Adverb:SentPos:ROI:SCT.overall.V2pct 16  1.12  0.32657
 
 Approximate significance of smooth terms:
-                     edf Ref.df    F             p-value
-s(Channel,Subject)   489    531 44.2 <0.0000000000000002
-s(Sentence,Subject) 4621   4792 33.1 <0.0000000000000002
+              edf Ref.df     F             p-value
+s(Subject)   17.8   18.0 105.9 <0.0000000000000002
+s(Sentence) 221.9  237.0  14.8 <0.0000000000000002
