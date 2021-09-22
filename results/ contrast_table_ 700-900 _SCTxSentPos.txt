@@ -1,0 +1,4 @@
+ contrast estimate    SE     df t.ratio p.value
+ V3 - V2     -1.24 0.832 124009  -1.486  0.1374
+
+Results are averaged over the levels of: ROI, Subject, Sentence, Adverb 

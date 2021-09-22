@@ -1,0 +1,10 @@
+ SentPos Adverb SCT.overall.V2pct.trend   SE     df lower.CL upper.CL
+ V3      kanske                   7.222 3.77 121202   -0.173    14.62
+ V2      kanske                   2.173 3.77 121202   -5.220     9.57
+ V3      hemma                   -0.507 3.77 121202   -7.905     6.89
+ V2      hemma                    4.857 3.78 121202   -2.545    12.26
+ V3      idag                    -2.590 3.77 121202   -9.983     4.80
+ V2      idag                     3.358 3.77 121202   -4.038    10.76
+
+Results are averaged over the levels of: ROI, Subject, Sentence 
+Confidence level used: 0.95 

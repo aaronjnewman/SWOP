@@ -1,0 +1,6 @@
+ SentPos SCT.overall.V2pct.trend   SE     df lower.CL upper.CL
+ V3                       -0.591 3.32 124009    -7.11     5.92
+ V2                        0.646 3.32 124009    -5.87     7.16
+
+Results are averaged over the levels of: ROI, Subject, Sentence, Adverb 
+Confidence level used: 0.95 
