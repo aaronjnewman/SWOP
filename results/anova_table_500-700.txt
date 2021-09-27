@@ -1,0 +1,30 @@
+
+Family: gaussian 
+Link function: identity 
+
+Formula:
+MeanAmpl ~ (Adverb + SentPos + ROI + baseline)^4 + s(Subject, 
+    bs = "re") + s(Sentence, bs = "re")
+
+Parametric Terms:
+                            df     F              p-value
+Adverb                       2  1.14               0.3190
+SentPos                      1  6.15               0.0131
+ROI                          8 14.44 < 0.0000000000000002
+baseline                     1 59.20    0.000000000000014
+Adverb:SentPos               2  3.48               0.0308
+Adverb:ROI                  16  2.39               0.0014
+Adverb:baseline              2  2.59               0.0750
+SentPos:ROI                  8  1.38               0.1993
+SentPos:baseline             1  5.50               0.0191
+ROI:baseline                 8  6.98    0.000000003094012
+Adverb:SentPos:ROI          16  3.01    0.000045789085960
+Adverb:SentPos:baseline      2  1.20               0.3020
+Adverb:ROI:baseline         16  3.16    0.000018470159330
+SentPos:ROI:baseline         8  2.91               0.0030
+Adverb:SentPos:ROI:baseline 16  2.30               0.0022
+
+Approximate significance of smooth terms:
+              edf Ref.df     F             p-value
+s(Subject)   18.8   19.0 119.9 <0.0000000000000002
+s(Sentence) 222.6  237.0  15.5 <0.0000000000000002
