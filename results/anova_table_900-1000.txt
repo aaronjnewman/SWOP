@@ -1,4 +1,4 @@
-
+6.76, 
 Family: gaussian 
 Link function: identity 
 
@@ -28,3 +28,4 @@ Approximate significance of smooth terms:
               edf Ref.df    F             p-value
 s(Subject)   18.8   19.0 88.5 <0.0000000000000002
 s(Sentence) 223.6  237.0 16.7 <0.0000000000000002
+P< .001
