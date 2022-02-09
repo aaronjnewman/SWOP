@@ -1,6 +1,6 @@
 # SWOP (Swedish Word Order Processing)
 
-Data and analysis scripts associated with the manuscript: *Native word order processing is not uniform: An ERP-study of verb-second word order*. This paper was accepted for publication by *Frontiers in Psychology - Language Sciences*, on Feb 3, 2022; manuscript 668276.
+Data and analysis scripts associated with the manuscript: *Native word order processing is not uniform: An ERP-study of verb-second word order*. This paper was accepted for publication by *Frontiers in Psychology - Language Sciences*, on Feb 3, 2022; DOI: 10.3389/fpsyg.2022.668276
 
 ## Authors:
 - **[Susan Sayehli](https://www.su.se/profiles/ssaye-1.266931)**, Centre for Research on Bilingualism, Department of Swedish Language and Multilingualism, Stockholm University, Stockholm, Sweden
